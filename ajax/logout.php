@@ -1,0 +1,9 @@
+<?php
+    require_once($_SERVER['DOCUMENT_ROOT']."/includes/init.php");
+    if($ngoSession->is_logged_in())
+        $ngoSession->logout();
+    if($corpSession->is_logged_in())
+        $corpSession->logout();
+    if($volSession->is_logged_in())
+        $volSession->logout();
+?>
